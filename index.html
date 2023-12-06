@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shifumi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    <main>
+        <h1>SHIFUMI</h1>
+        <!-- Règles - Nicolas -->
+        <section id="regles">
+            <div id="regle">
+                <button id="regleButton"><i class="fas fa-info-circle"></i></button>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-back"></div>
+                <div class="modal-container">
+                    <img src="assets/img/regles.jpg" alt="image des règles">
+                    <a id="modal-close"><i class="fas fa-times"></i></a>
+                </div>
+              </div>
+            </section>
+        <!-- Fin Règles - Nicolas- -->
+        <!-- Phase 1 - Florian -->
+    <section id="phases">
+        <section id="phase1">
+            <div class="avatar">
+                <div class="col-1 text-center" id="prev"><i class="fas fa-chevron-circle-left"></i></div>
+                <img src="assets/img/avatar1.jpg" alt="Avatar du joueur" class="img-avatar">
+                <img src="assets/img/avatar2.jpg" alt="Avatar du joueur" class="img-avatar">
+                <img src="assets/img/avatar3.jpg" alt="Avatar du joueur" class="img-avatar">
+                <img src="assets/img/avatar4.jpg" alt="Avatar du joueur" class="img-avatar">
+                <div class="col-1 text-center" id="next"><i class="fas fa-chevron-circle-right"></i></div>
+            </div>
+            
+            <div class="pseudo">
+                <h2>Pseudo</h2>
+                <input type="text" name="" id="pseudo" placeholder="Votre pseudo ici"> 
+                <br>
+                <input type="button"  id="play" value="Jouer">
+            </div>
+        </section>
+
+        <!-- Phase 2 - Tiago -->
+        <section id="phase2">
+            <div class="game">
+                <figure id="playerSide">
+                    <img id="player" src="assets/img/avatar1.jpg" alt="Avatar du joueur">
+                    <figcaption id="nickname">Pseudo du joueur</figcaption>
+                </figure>
+                <div class="playerChoice">
+                    <div id="divRock">
+                        <button id="rock" type="button" class="choices"><img src="assets/img/pierre.png" alt=""></button>
+                    </div>
+                    <div id="divPaper">
+                        <button id="paper" type="button" class="choices"><img src="assets/img/feuille.png" alt=""></button>
+                    </div>
+                    <div id="divScissors">
+                        <button id="scissors" type="button" class="choices"><img src="assets/img/ciseaux.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="interface"> 
+                    <p id="round"></p>
+                    <p id="score">0 - 0</p>
+                    <p id="versus"> VS </p>
+                </div>
+                <div class="computerChoice">
+                    <div id="ordiRock">
+                    <button id="computerRock" type="button"><img src="assets/img/pierre-inverse.png" alt=""></button>
+                    </div>
+                    <div id="ordiPaper">
+                    <button id="computerPaper" type="button"><img src="assets/img/feuille-inverse.png" alt=""></button>
+                    </div>
+                    <div id="ordiScissors">
+                    <button id="computerScissors" type="button"><img src="assets/img/ciseaux-inverse.png" alt=""></button>
+                    </div>
+                </div>
+                <figure id="computerSide">
+                    <img id="computer" src="assets/img/avatar1.jpg" alt="Avatar de l'ordinateur">
+                    <figcaption id="ordiName"></figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Fin Phase 2 - Tiago -->
+        <!-- Phase 3 - Tiago -->
+        <section id="phase3">
+            <div class="avatarPlayers">
+                <figure id="playerSide" class="playerSide">
+                    <img id="finalPlayer" class="player" src="assets/img/avatar1.jpg" alt="Avatar du joueur">
+                    <figcaption id="finalNickname"></figcaption>
+                </figure>
+                <div class="finalScore" id="finalScore"> 
+                    <p></p>
+                </div>
+                <figure id="computerSide" class="computerSide">
+                    <img id="computer" class="computer" src="assets/img/avatar1.jpg" alt="Avatar de l'ordinateur">
+                    <figcaption id="finalOrdiName" class="ordiName"></figcaption>
+                </figure>
+            </div>
+            <div class="finalSentence">
+                <p id="finalSentence"></p>
+                
+            </div>
+            <div class="replay">
+                <button type="button" id="retry">Rejouer ?</button>
+            </div>
+        </section>
+    </section>
+        <!-- Fin Phase 3 - Tiago -->
+    </main>
+</body>
+</html>
