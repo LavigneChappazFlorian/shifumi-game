@@ -311,7 +311,7 @@ let choiceOrdi3 = function(){
     }
 }
 let endGame = function(){
-    if (manche==3){
+    if (manche==11){
         document.getElementById("finalScore").innerHTML = score.textContent;
         document.getElementById("phase2").style.display = "none";
         document.getElementById("phase3").style.display = "block";
