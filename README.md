@@ -29,4 +29,4 @@ Ce projet crée l'apparence et les fonctionnalités dynamiques d'un jeu Shifumi 
 Clonez ce dépôt sur votre machine locale à l'aide de la commande suivante :
 
 ```bash
-git clone https://github.com/LavigneChappazFlorian/kfc-rebuild.git
+git clone https://github.com/LavigneChappazFlorian/shifumi-game.git
